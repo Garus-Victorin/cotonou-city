@@ -1,0 +1,9 @@
+# Dépendances
+node_modules/
+
+# Build Vite
+dist/
+
+# Fichiers locaux
+*.local
+.DS_Store

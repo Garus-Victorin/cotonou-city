@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Runner</title>
+    <!-- Le CSS est injecté par Vite via l'import dans src/main.js -->
+  </head>
+  <body>
+    <!-- Overlay HTML affiché par-dessus le canvas Three.js -->
+    <div id="ui">
+      <!-- Score en haut à gauche -->
+      <div id="score" aria-label="Score actuel">0</div>
+
+      <!-- Écran de game over (masqué tant que la partie tourne) -->
+      <div id="game-over" class="hidden" role="dialog" aria-modal="true">
+        <div class="panel">
+          <h1>Game Over</h1>
+          <p class="final-label">Score final</p>
+          <p id="final-score">0</p>
+          <button id="replay-button" type="button">Rejouer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Point d'entrée du bundle Vite -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
